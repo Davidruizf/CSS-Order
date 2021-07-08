@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Order-CSS</title>
+</head>
+<style>
+    .contenedor { 
+        display: flex;
+    }
+    .caja {
+height: 150px;
+flex: 1;
+margin: 5px;
+text-align: center;
+line-height: 150px;
+font-size: 50px;
+font-family: sans-serif;
+color: #fff;
+}
+.color1 {
+background-color: #00838f;
+}
+.color2 {
+background-color: #0097a7;
+}
+.color3 {
+background-color: #00acc1;
+}
+.color4 {
+background-color: #00bcd4;
+}
+.color5 {
+background-color: #26c6da;
+}
+.color6 {
+background-color: #4dd0e1;
+}
+.color7 {
+background-color: #80deea;
+}
+.color8 {
+background-color: #b2ebf2;
+}
+.color9 {
+background-color: #e0f7fa;
+}
+.caja:first-child {
+order: 1;
+}
+.caja:nth-child(2) {
+order: 2;
+}
+.caja:nth-child(3) {
+order: 3;
+}
+.caja:nth-child(4) {
+order: 4;
+}
+.caja:nth-child(5) {
+order: 5;
+}
+.caja:nth-child(6) {
+order: 6;
+}
+.caja:nth-child(7) {
+order: 7;
+}
+.caja:nth-child(8) {
+order: 8;
+}
+.caja:nth-child(9) {
+order: 9;
+}
+
+@media screen and (max-width: 768px) {
+.contenedor {
+flex-direction: column;
+}
+.caja:first-child {
+order: 9;
+}
+.caja:nth-child(2) {
+order: 8;
+}
+.caja:nth-child(3) {
+order: 7;
+}
+.caja:nth-child(4) {
+order: 6;
+}
+.caja:nth-child(5) {
+order: 5;
+}
+.caja:nth-child(6) {
+order: 4;
+}
+.caja:nth-child(7) {
+order: 3;
+}
+.caja:nth-child(8) {
+order: 2;
+}
+.caja:nth-child(9) {
+order: 1;
+}
+}
+@media screen and (max-width: 480px) {
+.contenedor {
+flex-direction: column;
+}
+.caja:first-child {
+order: 1;
+}
+.caja:nth-child(3) {
+order: 2;
+}
+.caja:nth-child(5) {
+order: 3;
+}
+.caja:nth-child(7) {
+order: 4;
+}
+.caja:nth-child(9) {
+order: 5;
+}
+.caja:nth-child(2) {
+order: 6;
+}
+.caja:nth-child(4) {
+order: 7;
+}
+.caja:nth-child(6) {
+order: 8;
+}
+.caja:nth-child(8) {
+order: 9;
+}
+}
+</style>
+<body>
+    <div class="contenedor">
+        <div class="caja color1">01</div>
+        <div class="caja color2">02</div>
+        <div class="caja color3">03</div>
+        <div class="caja color4">04</div>
+        <div class="caja color5">05</div>
+        <div class="caja color6">06</div>
+        <div class="caja color7">07</div>
+        <div class="caja color8">08</div>
+        <div class="caja color9">09</div>
+        </div>
+    
+</body>
+</html>
